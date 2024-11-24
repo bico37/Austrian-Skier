@@ -1,0 +1,119 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    filter: blur(4px); /* Weichzeichnungseffekt anpassen */
+}
+  
+.background-image {
+    background-image: url(../img/background//photo-1512273222628-4daea6e55abb.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    height: 90vh;
+}
+
+#content{
+    width: 40vw;
+    padding: 4vw;
+    padding-bottom: 2vw;
+    border-radius: 2vw  ;
+
+    background-color: #ffffffae;
+    -webkit-box-shadow: 10px 24px 20px -2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 24px 20px -2px rgba(0,0,0,0.25);
+    box-shadow: 10px 24px 20px -2px rgba(0,0,0,0.25);
+}
+#headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    padding-right: 1vw;
+}
+h1{
+    
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1vw;
+
+}
+h2{
+    margin: 0;
+    margin-top: 1vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#formular{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+#inputs{
+    margin-left: 2vw;
+}
+input p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input {
+    padding: 3px;
+    font-size: 17px;
+    border-width: 2px;
+    border-color: #000000;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 7px;
+    box-shadow: 4px 5px 13px rgba(66,66,66,.40);
+    /* text-shadow: 0px 0px 5px rgba(66,66,66,.75); */
+}
+input:focus {
+    outline:none;
+}
+#answer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(67, 67, 67);
+    margin-top: 1vw;
+    height: 2vw;
+}
+#submit{
+    margin-top: 1vw;
+
+    font-family: 'Ubuntu', sans-serif;
+   
+    width: 7vw;
+    height: 2.3vw;
+    line-height: 1;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 3px solid black;
+    background: #fff;
+    color: black;
+    border-radius: 0.8vw;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .35s;
+}
+#submit:hover{
+    background: #3383ce;
+    color: #fff;
+}
+#submit:active{
+    transform: scale(0.9);
+}

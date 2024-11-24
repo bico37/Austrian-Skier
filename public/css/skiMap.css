@@ -1,0 +1,264 @@
+* {
+    /* outline: 2px dotted red; */
+}
+
+@font-face {
+    font-family: Montbasic;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montfett;
+    src: url(../font/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/OpenSans-Bold.ttf);
+}
+
+/* @font-face {
+    font-family: Lucky;
+    src: url(../font/Lucky\Skirt\\ttf);
+  } */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    filter: blur(0px);
+    /* Weichzeichnungseffekt anpassen */
+}
+
+.background-image {
+    background-image: url(../img/background/skiMap.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/* NAV */
+nav {
+    width: 100%;
+    background-color: #3383ce;
+    height: 3.4vw;
+    border-radius: 0vw 0vw 1vw 1vw;
+    position: absolute;
+
+    /* -webkit-box-shadow: 0px 7px 9px 7px rgb(19, 0, 224);
+      -moz-box-shadow: 0px 7px 9px 7px rgb(19, 0, 224);
+      box-shadow: 0px 7px 9px 7px rgb(19, 0, 224); */
+}
+
+#nav-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#nav-headline {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-headline {
+    cursor: pointer;
+}
+
+#nav-headline h1 {
+    color: rgb(255, 246, 246);
+    font-size: 2vw;
+    font-family: Montfett;
+    margin-top: 0.2vw;
+}
+
+#nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vw;
+    margin-top: 0.4vw;
+}
+
+#nav-link0 h2,
+#nav-link1 h2,
+#nav-link2 h2 {
+    margin: 4px;
+    padding: 0;
+}
+
+#nav-link0,
+#nav-link1,
+#nav-link2 {
+    text-decoration: none;
+    width: 13vw;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Ubuntu", sans-serif;
+    /* margin-top: 1vw; */
+
+    transition: 0.3s all ease;
+}
+
+#nav-link2 {
+    margin-left: 1vw;
+}
+
+#nav-link0:hover,
+#nav-link1:hover,
+#nav-link2:hover {
+    border-bottom: 3px white solid;
+    color: rgb(191, 191, 191);
+}
+
+
+/*************************
+*********Skier Icons******
+**************************/
+#content{
+    padding-top: 3vw;
+}
+.skier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 7vw;
+    background-image: linear-gradient(to right, #004ec3, #007ddd, #14a6ea, #74cff3, #bff4ff);
+    padding: 0.2vw;
+    border-radius: 1vw;
+    cursor: pointer;
+
+    transition: 1s all ease;
+}
+.skier img{
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 7vw;
+}
+
+.skier h1{
+    font-size: 0.8rem;
+    font-family: OpenSans;
+}
+
+.skier:hover{
+    transform: scale(1.5);
+}
+
+/* ************ */
+/* **Big Card** */
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; /* Die volle Höhe des Viewports */
+}
+#big-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 0px 40px 13px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 40px 13px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 40px 13px rgba(0,0,0,0.75);
+}
+
+#grid-boxes{
+   background-color: #24abd8;
+    width: 20vw;
+    /* Breite des Containers anpassen */
+    margin: 0 auto;
+    /* Horizontal zentrieren */
+  
+    border-radius: 2vw;
+    margin-top: 2vw;
+    padding: 2%;
+  
+    -webkit-box-shadow: 0px 0px 40px 13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 40px 13px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 40px 13px rgba(0,0,0,0.75);
+}
+
+#grid-boxes img{
+    width: 100%;
+}
+
+#grid-boxes h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  
+    font-family: OpenSans;
+    font-size: 1.7rem;
+    color: #171717;
+  
+    text-align: left;
+    border-bottom: 2.6px white solid;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+  
+#grid-boxes h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.7vw;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: #ffffffdf;
+    margin-bottom: 0.7vw;
+}
+#skier0 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+#skier1 {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+}
+
+#skier2 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+#skier3 {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+}
+
+#skier4 {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+#skier5 {
+    position: absolute;
+    top: 79%;
+    left: 70%;
+}

@@ -1,0 +1,215 @@
+* {
+    /* outline: 2px dotted red; */
+  }
+  
+  @font-face {
+    font-family: Montbasic;
+    src: url(../font/Montserrat-Regular.ttf);
+  }
+  @font-face {
+    font-family: Montfett;
+    src: url(../font/Montserrat-Bold.ttf);
+  }
+  /* @font-face {
+    font-family: Lucky;
+    src: url(../font/Lucky\Skirt\\ttf);
+  } */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  
+    filter: blur(0px); /* Weichzeichnungseffekt anpassen */
+  }
+  
+  .background-image {
+    background-image: url(../img/background//photo-1512273222628-4daea6e55abb.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* NAV */
+  nav {
+    width: 100%;
+    background-color: #3383ce96;
+    height: 3.4vw;
+    border-radius: 0vw 0vw 1vw 1vw;
+    position: absolute;
+  
+    /* -webkit-box-shadow: 0px 7px 9px 7px rgb(19, 0, 224);
+      -moz-box-shadow: 0px 7px 9px 7px rgb(19, 0, 224);
+      box-shadow: 0px 7px 9px 7px rgb(19, 0, 224); */
+  }
+  
+  #nav-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  #nav-headline {
+    display: flex;
+    justify-content: center;
+  }
+  #nav-headline {
+    cursor: pointer;
+  }
+  #nav-headline h1 {
+    color: rgb(255, 246, 246);
+    font-size: 2vw;
+    font-family: Montfett;
+    margin-top: 0.2vw;
+  }
+  
+  #nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vw;
+    margin-top: 0.4vw;
+  }
+  
+  #nav-link0 h2,
+  #nav-link1 h2,
+  #nav-link2 h2 {
+    margin: 4px;
+    padding: 0;
+  }
+  #nav-link0,
+  #nav-link1,
+  #nav-link2 {
+    text-decoration: none;
+    width: 13vw;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Ubuntu", sans-serif;
+    /* margin-top: 1vw; */
+  
+    transition: 0.3s all ease;
+  }
+  #nav-link2 {
+    margin-left: 1vw;
+  }
+  
+  #nav-link0:hover,
+  #nav-link1:hover,
+  #nav-link2:hover {
+    border-bottom: 3px white solid;
+    color: rgb(191, 191, 191);
+  }
+  
+  /* ******************************** */
+  /* ***********Content BOX********** */
+  /* ******************************** */
+  
+  /* Man headline */
+  #man-headline h1{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid black;
+  }
+  
+  #man-boxis,
+  #women-boxis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #grid-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient(to right, #004ec3af, #007ddd9c, #14a6eaaf, #74cff3b1, #bff4ffc3);
+    width: 40vw; /* Breite des Containers anpassen */
+    margin: 0 auto; /* Horizontal zentrieren */
+  
+    border-radius: 2vw;
+    margin-top: 2vw;
+    padding: 2%;
+  
+    -webkit-box-shadow: 8px 10px 25px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 8px 10px 25px -3px rgba(0,0,0,0.75);
+  box-shadow: 8px 10px 25px -3px rgba(0,0,0,0.75);
+  }
+  
+  #img-box {
+    grid-column: 1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+  }
+  
+  #img-box img {
+    width: 100%;
+    margin-bottom: 0.4vw;
+    margin-left: 0.4vw;
+  }
+  #content-box{
+    margin-left: 1vw;
+  }
+  
+  #content-box {
+    grid-column: 2;
+  }
+  
+  #grid-boxes h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  
+    font-family: Arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8rem;
+    color: #171717;
+  
+    text-align: left;
+    border-bottom: 2.6px white solid;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  
+  }
+  #grid-boxes h2{
+    margin: 0;
+    padding: 0;
+    margin-top: 0.7vw;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: #ffffffdf;
+    margin-bottom: 0.7vw;
+  }
+  #genderHeadline h1{
+    margin: 0;
+    padding: 0;
+    margin-left: 0vw;
+    font-family: Montfett;
+    padding-bottom: 0.1vw;
+    font-size: 1.4rem;
+  }
+  #genderHeadline{
+    margin: 0;
+    padding: 0;
+    margin-left: 3vw;
+    width: 40%;
+    padding-bottom: 0.3vw;
+    border-bottom: 4px solid black;
+    padding-top: 4vw;
+  }
